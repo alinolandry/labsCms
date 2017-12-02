@@ -12,5 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend/home');
+});
+
+Route::get('/about', function () {
+    return view('frontend/about');
+});
+
+Route::get('/service', function () {
+    return view('frontend/service');
+});
+
+Route::get('/contact', function () {
+    return view('frontend/contact');
+});
+
+Route::get('/blog', function () {
+    return view('frontend/blog');
+});
+
+Route::get('/admin', function () {
+    return view('backend/dashboad');
+});
+
+Route::get('/admin/blog', function () {
+    return view('backend/blog');
 });
