@@ -13,28 +13,28 @@
 
 Route::get('/', function () {
     return view('frontend/home');
-});
+})->name('home');
 
 Route::get('/about', function () {
     return view('frontend/about');
-});
+})->name('about');
 
 Route::get('/service', function () {
     return view('frontend/service');
-});
+})->name('service');
 
 Route::get('/contact', function () {
     return view('frontend/contact');
-});
+})->name('contact');
 
 Route::get('/blog', function () {
     return view('frontend/blog');
-});
+})->name('blog');
 
 Route::get('/admin', function () {
     return view('backend/dashboad');
-});
+})->name('admin');
 
 Route::get('/admin/blog', function () {
     return view('backend/blog');
-});
+})->name('admin_blog');
