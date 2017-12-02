@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from wp.hostlin.com/economy-plus/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Dec 2017 09:49:31 GMT -->
 <head>
 	<meta charset="UTF-8">
 	<title>LABS CMS | V 1.0</title> 
@@ -48,7 +47,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="main-logo">
-                    <a href="index-2.html"><img src="images/logo/logo.png" alt=""></a>
+                    <a href="{{ route('home') }}"><img src="images/logo/logo.png" alt=""></a>
                 </div>
             </div>
 
