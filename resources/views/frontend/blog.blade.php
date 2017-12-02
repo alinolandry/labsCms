@@ -1,5 +1,5 @@
 
- @extends ('../layouts.master')
+ @extends ('layouts.master')
  
 
 
@@ -11,7 +11,7 @@
 <div class="inner-banner has-base-color-overlay text-center" style="background: url(images/background/1.jpg);">
     <div class="container">
         <div class="box">
-            <h3>blog grid view</h3>
+            <h3>blog </h3>
         </div><!-- /.box -->
     </div><!-- /.container -->
 </div>
@@ -21,13 +21,13 @@
         <div class="pull-left">
             <ul class="list-inline link-list">
                 <li>
-                    <a href="index-2.html">Home</a>
+                    <a href="{{ route('home') }}">Home</a>
                 </li>
                 <li>
                     <a href="#">blog</a>
                 </li>
                 <li>
-                    grid view
+                    Y-Note
                 </li>
             </ul><!-- /.list-line -->
         </div><!-- /.pull-left -->

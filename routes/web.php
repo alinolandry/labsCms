@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('frontend/home');
 })->name('home');
 
+Route::get('/home', function () {
+    return view('frontend/home');
+});
+
 Route::get('/about', function () {
     return view('frontend/about');
 })->name('about');
@@ -27,14 +31,20 @@ Route::get('/contact', function () {
     return view('frontend/contact');
 })->name('contact');
 
-Route::get('/blog', function () {
-    return view('frontend/blog');
-})->name('blog');
 
-Route::get('/admin', function () {
+/*Route::get('/admin', function () {
     return view('backend/dashboad');
 })->name('admin');
 
 Route::get('/admin/blog', function () {
     return view('backend/blog');
 })->name('admin_blog');
+*/
+Auth::routes();
+
+Route::get('/blog', 'BlogController@showArticles')->name('blog');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
